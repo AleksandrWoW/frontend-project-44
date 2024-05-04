@@ -1,8 +1,12 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
+  "type": "module",
   "description": "[![Actions Status](https://github.com/AleksandrWoW/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/AleksandrWoW/frontend-project-44/actions)",
   "main": "index.js",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,10 +14,13 @@
     "type": "git",
     "url": "git+https://github.com/AleksandrWoW/frontend-project-44.git"
   },
-  "author": "",
+  "author": "Aleksandr Serov",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AleksandrWoW/frontend-project-44/issues"
   },
-  "homepage": "https://github.com/AleksandrWoW/frontend-project-44#readme"
+  "homepage": "https://github.com/AleksandrWoW/frontend-project-44#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
