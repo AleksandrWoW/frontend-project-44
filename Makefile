@@ -3,6 +3,8 @@ install:
 
 brain-games:
 
+brain-even:
+
 
 publish:
 	npm publish --dry-run
