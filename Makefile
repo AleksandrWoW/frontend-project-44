@@ -5,6 +5,7 @@ brain-games:
 
 brain-even:
 
+brain-calc:
 
 publish:
 	npm publish --dry-run
