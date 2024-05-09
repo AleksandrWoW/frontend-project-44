@@ -1,10 +1,12 @@
 import readlineSync from 'readline-sync';
 
-export default (randomMath) => {
+export default (randomMath, gamesDescrip) => {
 
   console.log('Welcome to the Brain Games!');
   const nameUser = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${nameUser}!`);
+
+  console.log(gamesDescrip);
 
   for (let i = 0; i < 3; i += 1) {
     const random = randomMath();

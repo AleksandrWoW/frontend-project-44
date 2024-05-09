@@ -1,0 +1,35 @@
+import randomNumber from '../randomNumber.js';
+import startGames from '../index.js';
+
+const getResultOfExpression = (firstValue, operator, secondValue) => {
+  switch (operator) {
+    case '+':
+      return firstValue + secondValue;
+    case '-':
+      return firstValue - secondValue;
+    case '*':
+      return firstValue * secondValue;
+    default:
+      throw new Error(`Unknown operator: '${operator}'!`);
+  }
+};
+
+const operators = ['+', '-', '*'];
+
+const gamesDescrip = 'What is the result of the expression?';
+
+const randomMath = () => {
+  const firstNumber = randomNumber(1, 25);
+  const secondNumber = randomNumber(1, 25);
+  const operator = operators[randomNumber(0, operators.length - 1)];
+
+  const question = `${firstNumber} ${operator} ${secondNumber}`;
+  const resultOfExpression = getResultOfExpression(firstNumber, operator, secondNumber);
+  const correctAnswer = resultOfExpression.toString();
+
+  return [question, correctAnswer];
+};
+
+export default () => {
+  startGames(randomMath, gamesDescrip);
+};
