@@ -1,7 +1,7 @@
 import randomNumber from '../randomNumber.js';
 import startGames from '../index.js';
 
-const getResultOfExpression = (firstValue, operator, secondValue) => {
+const resultExpression = (firstValue, operator, secondValue) => {
   switch (operator) {
     case '+':
       return firstValue + secondValue;
@@ -24,7 +24,7 @@ const randomMath = () => {
   const operator = operators[randomNumber(0, operators.length - 1)];
 
   const question = `${firstNumber} ${operator} ${secondNumber}`;
-  const resultOfExpression = getResultOfExpression(firstNumber, operator, secondNumber);
+  const resultOfExpression = resultExpression(firstNumber, operator, secondNumber);
   const correctAnswer = resultOfExpression.toString();
 
   return [question, correctAnswer];

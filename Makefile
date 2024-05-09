@@ -7,6 +7,8 @@ brain-even:
 
 brain-calc:
 
+brain-gcd:
+
 publish:
 	npm publish --dry-run
 
