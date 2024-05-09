@@ -28,3 +28,16 @@ $ brain-even
 #### Пример игры
 
 [![asciicast](https://asciinema.org/a/fmORdT8z7nElEAUlwBLqsv6lq.svg)](https://asciinema.org/a/fmORdT8z7nElEAUlwBLqsv6lq)
+
+
+## Игра: ""Калькулятор"
+Суть игры в следующем: пользователю показывается случайное математическое выражение, например **17 + 1**, которое нужно вычислить и записать правильный ответ.
+
+#### Запуск игры
+
+```
+$ brain-calc
+```
+#### Пример игры
+
+[![asciicast](https://asciinema.org/a/hJlYCw8wcr0bC7a8aF1NjWoYD.svg)](https://asciinema.org/a/hJlYCw8wcr0bC7a8aF1NjWoYD)
