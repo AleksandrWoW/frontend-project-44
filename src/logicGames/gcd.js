@@ -11,7 +11,7 @@ const greatestCommonDivisor = (firstNum, secondNum) => {
 
 const gamesDescrip = 'Find the greatest common divisor of given numbers';
 
-const generateRoundsData = () => {
+const generateRounds = () => {
   const firstNumber = randomNumber();
   const secondNumber = randomNumber();
 
@@ -23,5 +23,5 @@ const generateRoundsData = () => {
 };
 
 export default () => {
-  startGames(generateRoundsData, gamesDescrip);
+  startGames(generateRounds, gamesDescrip);
 };

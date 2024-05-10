@@ -9,6 +9,8 @@ brain-calc:
 
 brain-gcd:
 
+brain-progression:
+
 publish:
 	npm publish --dry-run
 

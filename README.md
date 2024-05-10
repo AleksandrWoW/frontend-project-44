@@ -53,3 +53,15 @@ $ brain-gcd
 #### Пример игры
 
 [![asciicast](https://asciinema.org/a/eJouskNe3WSkZfRoj2pqvKkv9.svg)](https://asciinema.org/a/eJouskNe3WSkZfRoj2pqvKkv9)
+
+
+## Игра: "Арифметическая прогрессия"
+Суть игры: Показываем игроку ряд чисел, образующий арифметическую прогрессию, заменив любое из чисел двумя точками. Игрок должен определить это число.
+#### Запуск игры 
+
+```
+$ brain-progression
+```
+#### Пример игры
+
+[![asciicast](https://asciinema.org/a/nwljEnNr8QWFuAkZLFN2p5Udj.svg)](https://asciinema.org/a/nwljEnNr8QWFuAkZLFN2p5Udj)

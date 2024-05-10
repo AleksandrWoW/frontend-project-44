@@ -18,7 +18,7 @@ const operators = ['+', '-', '*'];
 
 const gamesDescrip = 'What is the result of the expression?';
 
-const randomMath = () => {
+const generateRoundsData = () => {
   const firstNumber = randomNumber(1, 25);
   const secondNumber = randomNumber(1, 25);
   const operator = operators[randomNumber(0, operators.length - 1)];
@@ -31,5 +31,5 @@ const randomMath = () => {
 };
 
 export default () => {
-  startGames(randomMath, gamesDescrip);
+  startGames(generateRoundsData, gamesDescrip);
 };
