@@ -35,7 +35,7 @@ $ brain-even
 
 #### Пример игры
 
-[![asciicast](https://asciinema.org/a/fmORdT8z7nElEAUlwBLqsv6lq.svg)](https://asciinema.org/a/fmORdT8z7nElEAUlwBLqsv6lq)
+[![asciicast](https://asciinema.org/a/9t5qVsvhZz4FUAS52OT3s0Bxd.svg)](https://asciinema.org/a/9t5qVsvhZz4FUAS52OT3s0Bxd)
 
 ## Игра: ""Калькулятор"
 
