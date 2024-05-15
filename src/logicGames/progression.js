@@ -1,7 +1,11 @@
 import randomNumber from '../randomNumber.js';
 import startGames from '../index.js';
 
-const generateProgression = (progressionLength, firstElement, progressionStep) => {
+const generateProgression = (
+  progressionLength,
+  firstElement,
+  progressionStep,
+) => {
   const progression = [];
   for (let i = 0; i < progressionLength; i += 1) {
     progression.push(firstElement + progressionStep * i);
@@ -18,7 +22,11 @@ const generateRounds = () => {
 
   const progressionStep = randomNumber(2, 10);
 
-  const progression = generateProgression(progressionLength, firstElement, progressionStep);
+  const progression = generateProgression(
+    progressionLength,
+    firstElement,
+    progressionStep,
+  );
 
   const randomIndex = randomNumber(0, progression.length - 1);
   const hiddenElement = progression[randomIndex];
@@ -31,5 +39,5 @@ const generateRounds = () => {
 };
 
 export default () => {
-    startGames(generateRounds, gamesDescrip);
+  startGames(generateRounds, gamesDescrip);
 };

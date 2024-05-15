@@ -10,7 +10,7 @@ const resultExpression = (firstValue, operator, secondValue) => {
     case '*':
       return firstValue * secondValue;
     default:
-      throw new Error(`Unknown operator: '${operator}'!`);
+      console.log(`Unknown operator: '${operator}'!`);
   }
 };
 
@@ -24,7 +24,11 @@ const generateRoundsData = () => {
   const operator = operators[randomNumber(0, operators.length - 1)];
 
   const question = `${firstNumber} ${operator} ${secondNumber}`;
-  const resultOfExpression = resultExpression(firstNumber, operator, secondNumber);
+  const resultOfExpression = resultExpression(
+    firstNumber,
+    operator,
+    secondNumber,
+  );
   const correctAnswer = resultOfExpression.toString();
 
   return [question, correctAnswer];

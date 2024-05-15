@@ -1,5 +1,5 @@
-import startGames from '../index.js';
 import randomNumber from '../randomNumber.js';
+import startGames from '../index.js';
 
 const greatestCommonDivisor = (firstNum, secondNum) => {
   if (firstNum === 0) {
