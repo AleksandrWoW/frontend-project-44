@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import startGames from '../src/logicGames/gcd.js';
+import runGame from '../src/logicGames/gcd.js';
 
-startGames();
+runGame();

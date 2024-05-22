@@ -10,7 +10,7 @@ const resultExpression = (firstValue, operator, secondValue) => {
     case '*':
       return firstValue * secondValue;
     default:
-      console.log(`Unknown operator: '${operator}'!`);
+      throw new Error(`Unknown operator: '${operator}'!`);
   }
 };
 

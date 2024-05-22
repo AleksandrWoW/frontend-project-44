@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import startGames from '../src/logicGames/even.js';
+import gameStart from '../src/logicGames/even.js';
 
-startGames();
+gameStart();

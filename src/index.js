@@ -9,13 +9,13 @@ export default (generateRounds, gamesDescrip) => {
 
   for (let i = 0; i < 3; i += 1) {
     const random = generateRounds();
-    const [meaning, yesOrNo] = random;
-    console.log(`Question: ${meaning}`);
+    const [question, correctAnswer] = random;
+    console.log(`Question: ${question}`);
     const youAnswer = readlineSync.question('Your answer: ');
 
-    if (youAnswer !== yesOrNo) {
+    if (youAnswer !== correctAnswer) {
       console.log(
-        `${youAnswer} is wrong answer ;(. Correct answer was ${yesOrNo}.`,
+        `${youAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.`,
       );
       console.log(`Let's try again, ${nameUser}!`);
       return;

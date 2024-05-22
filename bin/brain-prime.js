@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import startGames from '../src/logicGames/prime.js';
+import startGame from '../src/logicGames/prime.js';
 
-startGames();
+startGame();
